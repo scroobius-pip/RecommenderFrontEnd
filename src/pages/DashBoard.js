@@ -8,7 +8,7 @@ import Spotify from 'spotify-web-api-node'
 import qs from 'query-string'
 
 class FrontPage extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       spotifyOn: false,
@@ -18,51 +18,22 @@ class FrontPage extends Component {
     this.authenticateSpotify = this.authenticateSpotify.bind(this)
   }
 
-  spotifyChanged() {
+  spotifyChanged () {
     // this.setState({ spotifyOn: true })
     this.authenticateSpotify()
   }
 
-  authenticateSpotify() {
+  authenticateSpotify () {
     const scopes = 'user-read-private playlist-read-private'
     const clientId = '14718182058445ce8fa278a04f1fadea'
     const redirectUri = 'http://localhost:3000/dashboard'
-    const win = window.open(`https://accounts.spotify.com/authorize?response_type=code&client_id=${clientId}&scope=${encodeURIComponent(scopes)}&redirect_uri=${encodeURIComponent(redirectUri)}`, '_blank')
+    const win = window.open(`http://localhost:3001/auth/spotify?userId=${auth.currentUser.uid}`, '_blank')
 
     win.focus()
   }
 
-  async componentDidMount() {
+  async componentDidMount () {
     try {
-      // const results = await db.collection('users').doc(auth.currentUser.uid).collection('platforms').get()
-      // console.log(results)
-
-      const spotifyCode = qs.parse(this.props.location.search).code
-
-      const encodedData = new URLSearchParams()
-      encodedData.append('grant_type', 'authorization_code')
-      encodedData.append('code', spotifyCode)
-      encodedData.append('redirect_uri', 'http://localhost:3000/dashboard')
-      encodedData.append('client_id', '14718182058445ce8fa278a04f1fadea')
-      encodedData.append('client_secret', 'b98a23e1e6944b2192143dea5b1d6cf7')
-
-      if (spotifyCode) {
-        this.setState({ spotifyLoading: true })
-        try {
-          const accessTokenRefreshToken = await fetch('https://accounts.spotify.com/api/token', {
-            method: 'POST',
-            body: encodedData,
-            headers: {
-              'content-type': 'application/x-www-form-urlencoded'
-            },
-            mode: 'cors'
-          })
-          console.log(accessTokenRefreshToken)
-        } catch (error) {
-          console.log(error)
-        }
-        this.setState({ spotifyLoading: false })
-      }
       auth.onAuthStateChanged(async (user) => {
         if (!user) {
           this.props.history.push('/')
@@ -82,7 +53,7 @@ class FrontPage extends Component {
     console.log(this.props)
   }
 
-  render() {
+  render () {
     return (
 
       <Box marginTop={300} alignItems='center'>
