@@ -1,10 +1,11 @@
 import React from 'react'
 import { Modal, Box } from 'gestalt'
 import YouTube from 'react-youtube'
+import SpotifyPlayer from 'react-spotify-player'
 
 const platformIframe = (url) => {
   return {
-    spotify: <iframe src={url} width='300' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media' />,
+    spotify: <SpotifyPlayer uri='spotify:album:0sNOF9WDwhWunNAHPD3Baj' size='large' theme='black' view='coverart' />,
     youtube: <YouTube videoId={url.split('=')[1]} opts={{
       height: '390',
       width: '640',
@@ -17,7 +18,7 @@ const platformIframe = (url) => {
 }
 const Board = ({ heading, platform, url, onClose }) => {
   return (
-    <Modal size='lg' onDismiss={onClose} heading={heading} >
+    <Modal size='xs' onDismiss={onClose} heading={heading} >
       <Box>
         {platformIframe(url)[platform]}
       </Box>

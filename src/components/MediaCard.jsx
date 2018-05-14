@@ -6,7 +6,7 @@ const platformIcons = {
   'spotify': <img width={24} height={24} src={require('./logos/spotify.svg')} />
 }
 
-const MediaCard = ({ data: { name, source, url, onClick } }) => {
+const MediaCard = ({ data: { name, source, url, onClick, image } }) => {
   const handleClick = () => {
     onClick(source, name, url)
   }
@@ -16,6 +16,8 @@ const MediaCard = ({ data: { name, source, url, onClick } }) => {
       case 'youtube':
         return `https://i.ytimg.com/vi/${url.split('=')[1]}/hqdefault.jpg`
 
+      case 'spotify':
+        return image
       default:
         break
     }

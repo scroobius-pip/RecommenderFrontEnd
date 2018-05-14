@@ -6,43 +6,14 @@ const getMedia = () => [
     'type': 'video',
     'url': 'www.youtube.com/watch?v=DN9DW4rrEjY'
   }, {
-    'id': 'ILDH3HORWq',
-    'name': 'The Failure of Prayer and Miracle Claims - Atheist Experience',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=UKwinJ9NWYE'
-  }, {
-    'id': 'TWqbqHbU0D',
-    'name': 'Miraculous Stupidity - The Atheist Experience #799',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=AKoHM5ywGdQ'
+    'id': '0sNOF9WDwhWunNAHPD3Baj',
+    'name': 'Come On A Cone - Nicki Minaj',
+    'source': 'spotify',
+    'type': 'music',
+    'url': 'www.youtube.com/watch?v=a-p37csO4p8',
+    'image': 'https://i.scdn.co/image/3e6bf9a7400473f6b741818fefc7a9b646b5bb8e'
   },
   {
-    'id': 'rynOQGqOtV',
-    'name': "Matt's Brilliant Response - The Atheist Experience 696",
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=rJ6ruM7Muo8'
-  }, {
-    'id': 'Sk7YuOH2EB',
-    'name': 'Matt Dillahunty - Dropping Logic Bomb - Thug Life',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=a-p37csO4p8'
-  }, {
-    'id': 'YBxEM1M5xP',
-    'name': 'The Atheist Experience - matt dropping logic bombs ocallers',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=15a3EQgmnXA'
-  }, {
-    'id': '4OusD6BX0D',
-    'name': 'Hilarious Clip - Christian Is Terrified By Logic Atheis Experience',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=Z6ncHpFaP9c'
-  }, {
     'id': 'FYgrEHj5A9',
     'name': 'Google made fun of Apple products – even the new iPhone',
     'source': 'youtube',
@@ -72,7 +43,16 @@ const getMedia = () => [
     'source': 'youtube',
     'type': 'video',
     'url': 'www.youtube.com/watch?v=5Ap8S_RdNVY'
-  }, {
+  },
+  {
+    'id': '0sNOF9WDwhWunNAHPD3Baj',
+    'name': 'Good Enough - Alison Wonderland',
+    'source': 'spotify',
+    'type': 'music',
+    'url': 'https://open.spotify.com/artist/11gWrKZMBsGQWmobv3oNfW',
+    'image': 'https://i.scdn.co/image/7821798baf0204a93b62759ff50db754eac7ac43'
+  },
+  {
     'id': 'M0IQrkDh1T',
     'name': '【美尻】最高峰のお尻、大公開！？【ふともも】#161',
     'source': 'youtube',
@@ -127,12 +107,6 @@ const getMedia = () => [
     'type': 'video',
     'url': 'www.youtube.com/watch?v=UVHPHNegJNc'
   }, {
-    'id': 'q9DVoJGv64',
-    'name': 'Christian tries to use Logic and Gets Owned',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=-7XFJjrjZyk'
-  }, {
     'id': 'oeKgseiZZ7',
     'name': 'N E ✖ U S [Promo]',
     'source': 'youtube',
@@ -175,36 +149,6 @@ const getMedia = () => [
     'type': 'video',
     'url': 'www.youtube.com/watch?v=x8XAI9FJai8'
   }, {
-    'id': 'YIG974nCCL',
-    'name': 'No Game No Life Amv This Is How I Roll',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=5cwnbDAHtZg'
-  }, {
-    'id': 'woIvZFEisp',
-    'name': 'tfw best girl has a dong',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=cgfS4JbrMnk'
-  }, {
-    'id': '9jVqG14MQb',
-    'name': "Kanna's women respecting fidget spinner",
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=nype2oWktM8'
-  }, {
-    'id': '2fdGKMwiz6',
-    'name': 'Late Night Lamb Sauce',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=AzTGuXrBzZc'
-  }, {
-    'id': 'FS5JNUSHY1',
-    'name': "Hellsing Ultimate X - The Major's war speech",
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=4IHrlk-USGY'
-  }, {
     'id': 'c5gDIKXIEu',
     'name': 'Gentlemen, ve... ARE NAZIS!',
     'source': 'youtube',
@@ -228,12 +172,6 @@ const getMedia = () => [
     'source': 'youtube',
     'type': 'video',
     'url': 'www.youtube.com/watch?v=MCd58qPxPP0'
-  }, {
-    'id': 'W0veIFyWCh',
-    'name': 'Yoshiko Forces Gangsters to Deep Throat Bananas',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=2v9JSTP0HXE'
   }, {
     'id': 'jvUYUCFaie',
     'name': 'This Video Will Change Your Perception of North Korea',
@@ -306,12 +244,6 @@ const getMedia = () => [
     'source': 'youtube',
     'type': 'video',
     'url': 'www.youtube.com/watch?v=PVij2CNspjE'
-  }, {
-    'id': 'fhAFrSONKV',
-    'name': 'Car Illustration Art | Subaru Impreza | Photoshop CS5',
-    'source': 'youtube',
-    'type': 'video',
-    'url': 'www.youtube.com/watch?v=YETzTnAnUnk'
   }, {
     'id': 'te1l6X659F',
     'name': 'Nissan Skyline R32 GTR Illustration',
